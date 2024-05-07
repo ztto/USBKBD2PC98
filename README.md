@@ -48,52 +48,50 @@ USBKBD2PC98 とは USBキーボードをPC98で使えるようにしたもので
 
 ## 作成方法
 * ミニusbホストシールド2.0の5V改造
- ミニusbホストシールド2.0はUSB電源が3.3Vになっているので
- 5Vになるようにします。また、RAWに5V供給すればarduino pro mini(3.3v)は
- レギュレーターで3.3Vで駆動します
- 方法は以下
- VBUS パターンカット（赤丸部分）
+ ミニusbホストシールド2.0はUSB電源が3.3Vになっているので5Vになるようにします。<br>
+ また、RAWに5V供給すればarduino pro mini(3.3v)はレギュレーターで3.3Vで駆動します<br>
+ 方法は以下<br>
+ VBUS パターンカット（赤丸部分）<br>
 ![](image/cut.png)
 
 * USBKBD2PC98基板とarduino pro mini 3.3vの結合準備
- Arduinoに添付した PIN に3枚の基板を半田付けするのでプラスティックをちょっと端に寄せます。
- Arduinoは基板と逆方向にはんだ付けするので書き込み用のpinも逆につけます。
+ Arduinoに添付した PIN に3枚の基板を半田付けするのでプラスティックをちょっと端に寄せます。<br>
+ Arduinoは基板と逆方向にはんだ付けするので書き込み用のpinも逆につけます。<br>
 ![](image/IMG_6036.jpg)
 ![](image/IMG_6037.jpg)
 ![](image/IMG_6038.jpg)
 ![](image/IMG_6039.jpg)
 
 * USBKBD2PC98基板とarduino pro mini 3.3vの結合
- USBKBD2PC98基板に上記で準備したarduino pro mini 3.3vを結合します。
- ※半田はすべてのPINに対して行ってください
+ USBKBD2PC98基板に上記で準備したarduino pro mini 3.3vを結合します。<br>
+ ※半田はすべてのPINに対して行ってください<br>
 
 * USBKBD2PC98基板とミニusbホストシールド2.0の結合
- USBKBD2PC98基板に上記で準備したミニusbホストシールド2.0を結合します。
- ※半田はすべてのPINもしくは画像の部分のみに対して行ってください
+ USBKBD2PC98基板に上記で準備したミニusbホストシールド2.0を結合します。<br>
+ ※半田はすべてのPINもしくは画像の部分のみに対して行ってください<br>
 
 * ミニusbホストシールド2.0に5V供給線の結合
- ミニusbホストシールド2.0に5V供給線を結合します
- ※半田は画像の線部分
+ ミニusbホストシールド2.0に5V供給線を結合します<br>
+ ※半田は画像の線部分<br>
 
 * レベル変換、リセットヒューズの結合
- USBKBD2PC98基板にレベル変換とリセットヒューズを結合します
- ※ケーブル側がHV、arduino pro mini 3.3v側がLVとなります。
+ USBKBD2PC98基板にレベル変換とリセットヒューズを結合します<br>
+ ※ケーブル側がHV、arduino pro mini 3.3v側がLVとなります。<br>
  
 * Minidin 8p、Minidin 9pの結合
- USBKBD2PC98基板にMinidin 8p、Minidin 9pを結合します
- minidin8P
-   1 RST
-   2 GND
-   4 RxD
-   8 Vcc(+5V)
-   
- minidin9P
-   2 XA
-   3 XB
-   4 YA
-   5 YB
-   6 L
-   8 R
+ USBKBD2PC98基板にMinidin 8p、Minidin 9pを結合します<br>
+ minidin8P<br>
+   1 RST<br>
+   2 GND<br>
+   4 RxD<br>
+   8 Vcc(+5V)<br>
+ minidin9P<br>
+   2 XA<br>
+   3 XB<br>
+   4 YA<br>
+   5 YB<br>
+   6 L<br>
+   8 R<br>
    
 * プログラムの書き込み
- PlatformIOにてプログラムを書きこんでください
+ PlatformIOにてプログラムを書きこんでください<br>
